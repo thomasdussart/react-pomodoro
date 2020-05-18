@@ -1,16 +1,10 @@
-/* @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
+ @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
 body {
   background-color: rgb(51, 50, 48);
   font-family: "IBM Plex Mono", monospace;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-}
+
 
 h2 {
   font-size: 40px;
@@ -53,7 +47,7 @@ span {
 }
 
 button {
-  border: 2px solid white !important;
+  border: 2px solid white;
   height: 30px;
   margin: 0 12px;
   padding: 0px 7px;
@@ -110,4 +104,4 @@ button:hover {
   display: flex;
   margin-top: 20px;
   text-align: center;
-}*/
+}
