@@ -16,7 +16,7 @@ function SessionLength(props) {
     props.decreaseSession();
   }
   return (
-    <section>
+    <section id="session">
       <h4>Pomodoro Length</h4>
       <section className="interval-container">
         <button

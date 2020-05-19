@@ -1,112 +1,67 @@
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
 body {
-  background-color: rgb(51, 50, 48);
-  font-family: "IBM Plex Mono", monospace;
+background-color: #585858;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
 }
 
-
-
-h2 {
-  font-size: 40px;
-  font-weight: 500;
-  padding: 3px 10px;
-  color: red;
-  border: 4px solid white;
+main {
+display: flex;
+flex-direction: column;
+align-items: space-evenly;
 }
 
-h4 {
-  text-align: center;
-  margin-top: 0px;
-  font-size: 1.5rem;
-  color: green; 
-}
 
 span {
-  color: yellow;
-}
-
-.icon {
-  width: 85%;
-  height: 85%;
-}
-
-.icon-timer {
-  height: 70%;
-  width: 70%;
+color: white;
+font-size: 72px;
 }
 
 .interval-container {
-  display: flex;
-  margin: 0 20px;
-  align-items: center;
-  height: 3vh;
-}
-
-.interval-lenght-container {
-  display: flex;
+display: flex;
+justify-content: center;
+align-content: space-around;
+width: 500px;
+height: 100px;
 }
 
 button {
-  border: 2px solid white;
-  height: 30px;
-  margin: 0 12px;
-  padding: 0px 7px;
-
-  border: none;
-  outline: none;
-  background-color: black;
-  color: red;
-  cursor: pointer;
-  width: 70px;
-  text-align: center;
+background:    #0275d8;
+border-radius: 11px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 26px/1 "Open Sans", sans-serif;
+text-align:    center;
+width: 		100px;
+height:		50px;
 }
 
-.button-timer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h4 {
+color: white;
+text-decoration: underline;
 }
 
-.button-break {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-button:disabled {
-  cursor: not-allowed;
-}
-
-button:hover {
-  background-color: cyan;
-  box-shadow: 2px 2px black;
-}
-
-.interval-length {
-  font-size: 2rem;
-  color: cyan;
-}
-
-.timer-container {
-  border: 24px solid white;
-  margin-top: 40px;
-  display : flex;
-  flex-direction : column;
-  width: 250px;
-  text-align: center;
-  padding: 10px 0px;
-  margin: 40px auto;
-}
-
-.timer {
-  font-size: 3rem;
+p {
+display: flex;	
+color: white;
+font-size: 34px;
+padding: 40px;
+margin-top: -30px;
 }
 
 .timer-actions {
-  display: flex;
-  margin-top: 20px;
-  text-align: center;
+margin-top: 30px;
+margin-bottom: 10px;
 }
+
+.timerbuttons {
+border: solid 10px #0275D8;
+border-radius: 40px;
+}
+
+
+
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

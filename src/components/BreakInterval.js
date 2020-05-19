@@ -17,7 +17,7 @@ function BreakInterval(props) {
     props.increaseBreak();
   }
   return (
-    <section>
+    <section id="break">
       <h4>Break Length</h4>
       <section className="interval-container">
         <button

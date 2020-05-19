@@ -28285,7 +28285,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -28317,7 +28317,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -28352,12 +28352,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"App.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"App.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/react-icons/lib/esm/iconsManifest.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/react-icons/lib/esm/iconsManifest.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -56720,7 +56720,9 @@ function BreakInterval(props) {
     props.increaseBreak();
   }
 
-  return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("h4", null, "Break Length"), /*#__PURE__*/_react.default.createElement("section", {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    id: "break"
+  }, /*#__PURE__*/_react.default.createElement("h4", null, "Break Length"), /*#__PURE__*/_react.default.createElement("section", {
     className: "interval-container"
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: "button-break",
@@ -56772,7 +56774,9 @@ function SessionLength(props) {
     props.decreaseSession();
   }
 
-  return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("h4", null, "Pomodoro Length"), /*#__PURE__*/_react.default.createElement("section", {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    id: "session"
+  }, /*#__PURE__*/_react.default.createElement("h4", null, "Pomodoro Length"), /*#__PURE__*/_react.default.createElement("section", {
     className: "interval-container"
   }, /*#__PURE__*/_react.default.createElement("button", {
     disabled: props.isPlay === true ? "disabled" : "",
@@ -56919,7 +56923,9 @@ var Timer = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("section", {
+      return /*#__PURE__*/_react.default.createElement("section", {
+        className: "timerbuttons"
+      }, /*#__PURE__*/_react.default.createElement("section", {
         className: "timer-container"
       }, /*#__PURE__*/_react.default.createElement("h4", null, this.state.isSession === true ? "Session" : "Break"), /*#__PURE__*/_react.default.createElement("span", {
         className: "timer"
@@ -57102,18 +57108,18 @@ var App = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("section", {
+      return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement(_SessionLength.default, {
+        isPlay: this.state.isPlay,
+        sessionLength: this.state.sessionLength,
+        increaseSession: this.onIncreaseSessionLength,
+        decreaseSession: this.onDecreaseSessionLength
+      }), /*#__PURE__*/_react.default.createElement("section", {
         className: "interval-lenght-container"
       }, /*#__PURE__*/_react.default.createElement(_BreakInterval.default, {
         isPlay: this.state.isPlay,
         breakInterval: this.state.breakLength,
         increaseBreak: this.onIncreaseBreakLength,
         decreaseBreak: this.onDecreaseBreakLength
-      }), /*#__PURE__*/_react.default.createElement(_SessionLength.default, {
-        isPlay: this.state.isPlay,
-        sessionLength: this.state.sessionLength,
-        increaseSession: this.onIncreaseSessionLength,
-        decreaseSession: this.onDecreaseSessionLength
       })), /*#__PURE__*/_react.default.createElement(_Timer.default, {
         timerMinute: this.state.timerMinute,
         breakLength: this.state.breakLength,
@@ -57142,7 +57148,7 @@ var _App = _interopRequireDefault(require("./components/App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById("root"));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./components/App":"components/App.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./components/App":"components/App.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -57170,7 +57176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52348" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44269" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -57346,5 +57352,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/src.e31bb0bc.js.map

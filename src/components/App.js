@@ -95,31 +95,30 @@ class App extends React.Component {
 
   render() {
     return (
-      <main>
-
-        <section className="interval-lenght-container">
-          <BreakInterval
-            isPlay={this.state.isPlay}
-            breakInterval={this.state.breakLength}
-            increaseBreak={this.onIncreaseBreakLength}
-            decreaseBreak={this.onDecreaseBreakLength}
-          />
-          <SessionLength
-            isPlay={this.state.isPlay}
-            sessionLength={this.state.sessionLength}
-            increaseSession={this.onIncreaseSessionLength}
-            decreaseSession={this.onDecreaseSessionLength}
-          />
-        </section>
-        <Timer
-          timerMinute={this.state.timerMinute}
-          breakLength={this.state.breakLength}
-          updateTimerMinute={this.onUpdateTimerMinute}
-          toggleInterval={this.onToggleInterval}
-          resetTimer={this.onResetTimer}
-          onPlayStopTimer={this.onPlayStopTimer}
-        />
-      </main>
+        <main>
+            <SessionLength
+                isPlay={this.state.isPlay}
+                sessionLength={this.state.sessionLength}
+                increaseSession={this.onIncreaseSessionLength}
+                decreaseSession={this.onDecreaseSessionLength}
+            />
+            <section className="interval-lenght-container">
+                <BreakInterval
+                    isPlay={this.state.isPlay}
+                    breakInterval={this.state.breakLength}
+                    increaseBreak={this.onIncreaseBreakLength}
+                    decreaseBreak={this.onDecreaseBreakLength}
+                />
+            </section>
+            <Timer
+                timerMinute={this.state.timerMinute}
+                breakLength={this.state.breakLength}
+                updateTimerMinute={this.onUpdateTimerMinute}
+                toggleInterval={this.onToggleInterval}
+                resetTimer={this.onResetTimer}
+                onPlayStopTimer={this.onPlayStopTimer}
+            />
+        </main>
     );
   }
 }
